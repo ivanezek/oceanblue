@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ocean Blue - Agencia de Turismo</title>
+</head>
+<body>
+    <header class="menuFlex">
+            <h1><img src="assets/img/logo.png">Ocean Blue</h1>
+            <nav class="navbar">
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienessomos.html">Nosotros</a></li>
+                    <li><a href="paquetes.html">Paquetes</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+    </header>
+    <main>
+        <h1>Dejanos tus datos y nos ponemos en contacto!</h1>
+        <img class="fotoContacto" src="assets/img/fotocontacto.jpg">
+        <form action="">
+            <div class="datosPersonales">
+                <h3>Ingrese aquí sus datos</h3>
+                <label for="nombre"></label>
+                <input type="text" name="nombre" placeholder="Nombre"><br>
+                <label for="edad"></label>
+                <input type="text" name="edad" placeholder="Edad:"><br>
+                <label for="destino"></label>
+                <input type="text" name="destino" placeholder="Destino:"><br>
+                <label for="correo"></label>
+                <input type="email" name="correo" placeholder="Correo Electrónico:"><br>
+            </div>
+            <div class="opcionCuatrimestre">
+                <h3>¿Qué cuatrimestre le interesa más para su destino?</h3>
+                <select name="cuatrimestre">
+                    <option value="Elegir">Elija el cuatrimestre</option>
+                    <option value="Primer">Enero a Abril</option>
+                    <option value="Segundo">Mayo a Agosto</option>
+                    <option value="Tercero">Septiembre a Diciembre</option>
+                </select><br>
+            </div>
+            <div class="eleccionViaje">
+                <h3>Viaja solo/a o acompañado/a?</h3>
+                <span>Solo/a</span>
+                <input type="radio" name="viaje" value="Solo">
+                <span>Acompañado/a</span>
+                <input type="radio" name="viaje" value="Acompañado"><br>
+            </div>
+            <div class="newsletter">
+                <h3>¿Querés que te informemos sobre novedades?</h3>
+                <input type="checkbox" name="acepta" value="1"/>
+            </div>
+            <div class="botonesContacto">
+                <input type="submit" class="botonContacto"  value="Contactenme!">
+                <input type="reset" class="botonContacto" value="Resetear">
+            </div>
+    </main>
+     <!---->
+     <footer>
+        <!--botones-->
+        <span>
+        <a href="index.html">Inicio</a>
+        <a href="quienessomos.html">Nosotros</a>
+        <a href="paquetes.html">Paquetes</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contacto.html">Contacto</a>
+        </span>
+        <!--redes-->
+        <span class="redes">
+        <a href="https://www.whatsapp.com/" target="_blank"><img src="assets/img/logo wp.png"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="assets/img/logo fb.png"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="assets/img/logo yt.png"></a>
+        <a href="https://www.twitter.com/" target="_blank"><img src="assets/img/logo tw.png"></a>
+        </span>
+    </footer>
+</body>
+</html>
