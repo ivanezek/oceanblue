@@ -5,35 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon-32x32.png">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Ocean Blue - Agencia de Turismo</title>
-</head>
-<body>
-    <header class="menuFlex">
-            <h1><img src="assets/img/logo.png">Ocean Blue</h1>
-            <nav class="navbar">
-                <ul class="nav">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="quienessomos.html">Nosotros</a></li>
-                    <li><a href="paquetes.html">Paquetes</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+     <!--Estilos propios-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Ocean Blue - Agencia de turismo</title>
+<body id="nosotrosFondo">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid menuInicio">
+              <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png"><h1>Ocean Blue</h1></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav h2 itemsInicio">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="quienessomos.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="paquetes.html">Paquetes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
                 </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-        <section id="nosotros">
-            <article class="textoNosotros">
-                <h2>Sobre Ocean Blue</h2>
-                <img class="fotoQuienesSomos" src="assets/img/quienessomos.jpg" alt="foto de la empresa">
-                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus hic esse odit delectus! Animi adipisci odit sint, autem quibusdam fugit est, ipsam nostrum doloremque esse molestiae eum inventore odio et!</h3>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequatur voluptas itaque ipsam asperiores deleniti modi alias quod impedit dolor, tenetur adipisci dicta voluptates aperiam consectetur, repudiandae facere reiciendis ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus alias temporibus exercitationem placeat veniam magnam. Dolorum earum consectetur dignissimos ipsam laboriosam eum, voluptatibus dolorem quaerat dicta necessitatibus. Similique, consequatur cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione quam dolores, voluptatem veniam ullam distinctio fugiat, repellendus earum, dolore corporis placeat voluptatum delectus magni eligendi itaque officia culpa? Et? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat consectetur, eligendi tempora omnis ut quisquam nulla aut modi laborum libero corporis odio vitae similique dolore est et error aliquam officia!</h3>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo delectus adipisci dolorem dicta in vel quisquam molestiae voluptates, repellendus qui. Quia quam blanditiis facilis quod quidem quo ipsa, assumenda tempore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae unde voluptas aliquid debitis at odit expedita quasi, corporis sequi, vel veniam! Incidunt nostrum tempora magni enim, hic facere! Molestias, quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium in veritatis voluptas, impedit temporibus molestiae possimus. Accusantium nobis ipsam eaque consequatur, maiores excepturi, tempora architecto quod, quis vel natus veniam.</h3>
+        <section id="nosotros" class="container">
+            <article class="textoNosotros text-center">
+                <h1 class="encabezadoNosotros">Sobre Ocean Blue</h1>
+                <p>Somos un equipo de profesionales con vocación por entregar una atención cercana y eficiente a nuestros pasajeros. Nuestro principal interés es que te sientas parte de la gran de Ocean Blue, Agencia de Turismo con más de 20 años de experiencia y una exitosa trayectoria en el mundo Turístico Nacional e Internacional.</p>
+                <p>
+                  Siempre estaremos dispuestos a generar en ti el sueño de viajar y ayudarte a vivir un momento único, el cual te hará ver la vida desde otra perspectiva y sentirte merecedor de un regalo que te enriquecerá el alma y te hará crecer como persona… jamás volverás a ser el mismo.
+                </p>
             </article>
         </section>
     </main>
+    <hr class="container">
         <footer>
             <!--botones-->
             <span>
@@ -51,5 +73,7 @@
             <a href="https://www.twitter.com/" target="_blank"><img src="assets/img/logo tw.png"></a>
             </span>
         </footer>
-</body>
+     <!--Javascript Bootstrap-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
 </html>
