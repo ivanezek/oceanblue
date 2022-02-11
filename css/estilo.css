@@ -52,28 +52,20 @@ button a{
     text-decoration: none;
 }
 /* index */
-.itemsRedondos{
+.contenidoIndex{
     margin-top: 15px;
 }
 .itemFotoUno{
-    background-image: url(../assets/img/excursiones.jpg);
-    background-size: cover;
     height: 140px;
     width: 140px;
-    background-position: center;
 }
 .itemFotoDos{
-    background-image: url(../assets/img/facilidadpago.jpg);
-    background-size: cover;
     height: 140px;
     width: 140px;
 }
 .itemFotoTres{
-    background-image: url(../assets/img/fotocontacto.jpg);
-    background-size: cover;
     height: 140px;
     width: 140px;
-    background-position: center;
 }
 .hero-section{
     align-items: flex-start;
@@ -123,7 +115,6 @@ button a{
     background-position: center;
     border-radius: var(--spacing-l);
     bottom: 0;
-    filter: brightness(0.75) saturate(1.2) contrast(0.85);
     left: 0;
     position: absolute;
     right: 0;
@@ -194,10 +185,7 @@ button a{
     margin-bottom: 25px;
     font-weight: bolder;
 }
-#nosotrosFondo{
-    background-image: url(../assets/img/dudoso.webp);
-    background-size: cover;
-}
+
 .fotoQuienesSomos{
     float: right;
     width: 366px;
@@ -269,14 +257,14 @@ main h1{
     border: 1px solid white;
 }
 /*contacto*/
-#contenidoContacto{
-    height: 82vh;
-}
 .contact-form{
     color: black;
 }
 .contact{
     padding: 30px;
+}
+.col-sm-2{
+    width: 40%;
 }
 .col-md-3{
     background-image: url(../assets/img/itemcuadradotres.jpg);
@@ -309,9 +297,13 @@ main h1{
     color: #fff;
     font-weight: 600;
     width: 25%;
+    margin-top: 10px;
 }
 .contact-form button:focus{
     box-shadow:none;
+}
+.contact-form button:hover{
+    color: burlywood;
 }
 /* footer */
 footer {
@@ -319,7 +311,6 @@ footer {
     font-family: 'Nunito';
     text-align: center;
     background-color: #060713;
-    min-height:max-content;
  }
  .encabezadoFooter{
      margin-top: 20px;
@@ -336,6 +327,9 @@ footer {
 #footerTres ul li a i{
     font-size: 2rem;
 }
+.derechosReservados{
+    margin: 0;
+}
 
 a{
     color: white;
@@ -343,4 +337,43 @@ a{
 }
 a:hover{
     color: burlywood;
+}
+
+/* MEDIA QUERY - SMARTPHONE*/
+
+@media (max-width: 480px) {
+    .navbar-nav{
+    text-align: center;
+    }
+    .contenidoIndex{
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .card__heading {
+        color: white;
+        font-size: 2.5rem;
+        text-shadow: 4px 4px 20px rgb(0 0 0 / 20%);
+        line-height: 1.4;
+        word-spacing: 100vw;
+        text-align: left;
+}
+}
+/* TABLET */
+@media (min-width: 481px) and (max-width: 1023px){
+    .navbar-nav{
+        text-align: center;
+        }
+    .contenidoIndex{
+        text-align: center;
+        margin-top: 10px;
+        }
+    .card__heading {
+        color: white;
+        font-size: 2.5rem;
+        text-shadow: 4px 4px 20px rgb(0 0 0 / 20%);
+        line-height: 1.4;
+        word-spacing: 100vw;
+        text-align: left;
+    }
 }
