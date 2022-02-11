@@ -23,11 +23,6 @@ body {
     box-sizing: border-box;
   }
   
-html{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-  }
-
 #headerIndex{
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -320,37 +315,32 @@ main h1{
 }
 /* footer */
 footer {
-    height: 7vh;
-    font-size: 3.5vh;
     word-spacing: 10px;
-    background-size: 100%;
-    display: flex;
-    flex-wrap: wrap;
- }
-
- span{
-     display: flex;
-     flex-wrap: wrap;
- }
- .botonesPagina{
-     padding-top: 9px;
- }
-
- span a{
-    color: white;
     font-family: 'Nunito';
-    padding-left: 10px;
+    text-align: center;
+    background-color: #060713;
+    min-height:max-content;
+ }
+ .encabezadoFooter{
+     margin-top: 20px;
+ }
+ i{
+     padding-right: 10px;
+ }
+#footerDos ul li{
+    list-style: none;
+}
+#footerTres ul li{
+    list-style: none;
+}
+#footerTres ul li a i{
+    font-size: 2rem;
+}
+
+a{
+    color: white;
     text-decoration: none;
 }
-span a:hover{
+a:hover{
     color: burlywood;
-}
-.redes{
-    margin-left: auto;
-}
-.redes img{
-    width: 32px;
-    height: 32px;
-    float: right;
-    padding: 5px;
 }
