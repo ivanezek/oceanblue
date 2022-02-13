@@ -1,0 +1,67 @@
+body{
+    margin: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: rgb(238,174,202);
+    background: linear-gradient(283deg, rgba(238,174,202,1) 0%, rgba(0,8,18,1) 100%);
+    color: white;
+}
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: white;
+    text-decoration: none;
+    &:hover{
+        color: $colorCremita;
+    }
+}
+
+/* NAVBAR */
+.navbar-brand{
+    display: flex;
+    align-items: center;
+        img{
+            width: 46px;
+            height: 46px;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+    }
+/*FOOTER*/
+footer {
+    word-spacing: 10px;
+    font-family: 'Nunito';
+    text-align: center;
+    background-color: #060713;
+}
+.encabezadoFooter{
+        margin-top: 20px;
+}
+i{
+    padding-right: 10px;
+}
+#footerDos{
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+}
+#footerTres{
+    ul{
+        li{
+            list-style: none;
+            a{
+                i{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+.derechosReservados{
+    margin: 0;
+}

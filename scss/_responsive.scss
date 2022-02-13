@@ -1,0 +1,51 @@
+/* MEDIA QUERY - SMARTPHONE*/
+
+@media (max-width: 480px) {
+    .navbar-nav{
+    text-align: center;
+    }
+    .contenidoIndex{
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .card__heading {
+        color: white;
+        font-size: 2.5rem;
+        text-shadow: 4px 4px 20px rgb(0 0 0 / 20%);
+        line-height: 1.4;
+        word-spacing: 100vw;
+        text-align: left;
+}
+}
+/* TABLET */
+@media (min-width: 481px) and (max-width: 1023px){
+    .navbar-nav{
+        text-align: center;
+        }
+    .contenidoIndex{
+        text-align: center;
+        margin-top: 10px;
+        }
+    .card__heading {
+        color: white;
+        font-size: 2.5rem;
+        text-shadow: 4px 4px 20px rgb(0 0 0 / 20%);
+        line-height: 1.4;
+        word-spacing: 100vw;
+        text-align: left;
+    }
+}
+
+/* CARTAS INDEX */
+@media(min-width: 540px){
+    .card-grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+@media(min-width: 960px){
+    .card-grid{
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }

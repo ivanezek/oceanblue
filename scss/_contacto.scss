@@ -1,0 +1,53 @@
+/*contacto*/
+.contact-form{
+    color: black;
+}
+.contact{
+    padding: $xlarge;
+    .row{
+        .backgroundContacto{
+            background-image: url(../assets/img/itemcuadradotres.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 4%;
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+        }
+    }
+}
+.col-sm-2{
+    width: 40%;
+}
+.contact-info{
+    margin-top: 10%;
+    img{
+        margin-bottom: 15%;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+}
+.formularioContacto{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    .contact-form{
+        label{
+            font-weight:600;
+        }
+        button{
+            background: #25274d;
+            color: #fff;
+            font-weight: 600;
+            width: 25%;
+            margin-top: 10px;
+            &:focus{
+                box-shadow:none;
+            }
+            &:hover{
+                color: $colorCremita;
+            }
+        }
+    }
+}
