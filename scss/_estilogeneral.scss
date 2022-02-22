@@ -40,9 +40,28 @@ footer {
 .encabezadoFooter{
         margin-top: 20px;
 }
+
+//MAPS
+$redes:(
+    linkedin: #0e76a8,
+    github: #6cc644,
+    instagram: #c13584,
+    youtube: red,
+);
+
+@each $red, $color in $redes{
+    .fa-#{$red}{
+        color: white;
+        &:hover{
+            color: $color;
+        }
+    }
+}
+
 i{
     padding-right: 10px;
 }
+
 #footerDos{
     ul{
         li{

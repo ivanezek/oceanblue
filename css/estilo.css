@@ -1,4 +1,3 @@
-/* VARIABLES */
 body {
   margin: 0px;
   font-family: "Roboto Condensed", sans-serif;
@@ -44,6 +43,34 @@ footer {
 
 .encabezadoFooter {
   margin-top: 20px;
+}
+
+.fa-linkedin {
+  color: white;
+}
+.fa-linkedin:hover {
+  color: #0e76a8;
+}
+
+.fa-github {
+  color: white;
+}
+.fa-github:hover {
+  color: #6cc644;
+}
+
+.fa-instagram {
+  color: white;
+}
+.fa-instagram:hover {
+  color: #c13584;
+}
+
+.fa-youtube {
+  color: white;
+}
+.fa-youtube:hover {
+  color: red;
 }
 
 i {
@@ -146,7 +173,7 @@ i {
 }
 
 .cartaDos {
-  background-image: url(../assets/img/fotofrancia.webp);
+  background-image: url(../assets/img/fotofrancia.jpg);
 }
 
 .cartaTres {
@@ -154,7 +181,7 @@ i {
 }
 
 .cartaCuatro {
-  background-image: url(../assets/img/tajmahal.jpg);
+  background-image: url(../assets/img/qatar.jpg);
 }
 
 .card-grid:hover > .card:not(:hover) .card__background {
@@ -187,8 +214,8 @@ i {
 #nosotros {
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 10px;
-  height: 78vh;
+  margin-top: 10%;
+  margin-bottom: 10%;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -215,7 +242,7 @@ i {
 }
 
 /* FAQ */
-main h1 {
+.encabezadoFaq {
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -312,6 +339,17 @@ main h1 {
     word-spacing: 100vw;
     text-align: left;
   }
+
+  .itemsPaquetes {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .itemCuadrado {
+    height: 326px;
+    width: 356px;
+    border: 1px solid white;
+  }
 }
 /* TABLET */
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -332,6 +370,17 @@ main h1 {
     word-spacing: 100vw;
     text-align: left;
   }
+
+  .itemsPaquetes {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .itemCuadrado {
+    height: 326px;
+    width: 356px;
+    border: 1px solid white;
+  }
 }
 /* CARTAS INDEX */
 @media (min-width: 540px) {
@@ -343,6 +392,19 @@ main h1 {
   .card-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+/* EXTEND DESAFIO */
+.itemRedondoPrueba, .itemRedondoPruebaDos {
+  height: 100px;
+  width: 350px;
+  border: 2px solid blue;
+  font-family: "Courier New", Courier, monospace;
+  margin: 2px;
+  color: white;
+}
+
+.itemRedondoPruebaDos {
+  color: yellow;
 }
 
 /*# sourceMappingURL=estilo.css.map */

@@ -16,7 +16,16 @@
         line-height: 1.4;
         word-spacing: 100vw;
         text-align: left;
-}
+      }
+    .itemsPaquetes{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .itemCuadrado{
+      height: 326px;
+      width: 356px;
+      border: 1px solid white;
+    }  
 }
 /* TABLET */
 @media (min-width: 481px) and (max-width: 1023px){
@@ -35,6 +44,15 @@
         word-spacing: 100vw;
         text-align: left;
     }
+    .itemsPaquetes{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .itemCuadrado{
+      height: 326px;
+      width: 356px;
+      border: 1px solid white;
+    } 
 }
 
 /* CARTAS INDEX */

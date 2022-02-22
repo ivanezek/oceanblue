@@ -5,20 +5,24 @@
     width: 100vh;
     }
 /* items redondos */
+
+// MIXINS
+@mixin indexCarouselSizes ($altoItemIndex, $anchoItemIndex) {
+  height: $altoItemIndex;
+  width: $anchoItemIndex;
+}
+// 
 .contenidoIndex{
     margin-top: 15px;
 }
 .itemFotoUno{
-    height: $itemRedondo;
-    width: $itemRedondo;
+  @include indexCarouselSizes (140px, 140px);
 }
 .itemFotoDos{
-    height: $itemRedondo;
-    width: $itemRedondo;
+  @include indexCarouselSizes (140px, 140px);
 }
 .itemFotoTres{
-    height: $itemRedondo;
-    width: $itemRedondo;
+  @include indexCarouselSizes (140px, 140px);
 }
 /* cartas animadas */
 .hero-section{
@@ -66,18 +70,21 @@
 .card:hover .card__background{
         transform: scale(1.05) translateZ(0);
     }
-  .cartaUno{
-    background-image: url(../assets/img/argentina.jpg);
+
+// MAPS
+$cartas:(
+  cartaUno: url(../assets/img/argentina.jpg),
+  cartaDos: url(../assets/img/fotofrancia.jpg),
+  cartaTres: url(../assets/img/machupichu.jpg),
+  cartaCuatro: url(../assets/img/qatar.jpg)
+);
+
+
+@each $carta, $fotoCarta in $cartas{
+  .#{$carta} {
+    background-image: $fotoCarta;
   }
-  .cartaDos{
-      background-image: url(../assets/img/fotofrancia.webp);
-  }
-  .cartaTres{
-      background-image: url(../assets/img/machupichu.jpg);
-  }
-  .cartaCuatro{
-    background-image: url(../assets/img/tajmahal.jpg);
-    }
+}
 
 .card-grid:hover > .card:not(:hover) .card__background{
     filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
