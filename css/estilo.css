@@ -393,18 +393,5 @@ i {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-/* EXTEND DESAFIO */
-.itemRedondoPrueba, .itemRedondoPruebaDos {
-  height: 100px;
-  width: 350px;
-  border: 2px solid blue;
-  font-family: "Courier New", Courier, monospace;
-  margin: 2px;
-  color: white;
-}
-
-.itemRedondoPruebaDos {
-  color: yellow;
-}
 
 /*# sourceMappingURL=estilo.css.map */
