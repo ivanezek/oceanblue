@@ -1,9 +1,9 @@
 body{
     margin: 0px;
     font-family: 'Roboto Condensed', sans-serif;
-    background: rgb(238,174,202);
-    background: linear-gradient(283deg, rgba(238,174,202,1) 0%, rgba(0,8,18,1) 100%);
-    color: white;
+    background: rgb(220,206,232);
+    background: linear-gradient(90deg, rgba(220,206,232,1) 0%, rgba(245,236,236,1) 50%, rgba(220,206,232,1) 100%);
+    color: #1d1028;
 }
 *{
     border: 0;
@@ -17,6 +17,16 @@ a{
     &:hover{
         color: $colorCremita;
     }
+}
+.fa-star{
+    color: gold;
+}
+
+#indexMain{
+    margin-top: 6%;
+}
+main{
+    margin-top: 8%;
 }
 
 /* NAVBAR */
@@ -36,6 +46,7 @@ footer {
     font-family: 'Nunito';
     text-align: center;
     background-color: #060713;
+    color: white;
 }
 .encabezadoFooter{
         margin-top: 20px;
@@ -47,6 +58,9 @@ $redes:(
     github: #6cc644,
     instagram: #c13584,
     youtube: red,
+    facebook-f:blue,
+    twitter:#00acee,
+    google-plus-g:orange,
 );
 
 @each $red, $color in $redes{

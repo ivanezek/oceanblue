@@ -1,12 +1,66 @@
 /* MEDIA QUERY - SMARTPHONE*/
 
 @media (max-width: 480px) {
+    main{
+      margin-top: 18%;
+    }
     .navbar-nav{
     text-align: center;
     }
     .contenidoIndex{
         text-align: center;
         margin-top: 10px;
+    }
+
+    .carousel-caption{
+      h1{
+        font-size: 2.5rem;
+      }
+      p{
+        font-size: 1.2rem;
+      }
+    }
+    .fotoRedonda{
+      .itemFotoUno{
+        @include indexSizes (140px, 140px);
+        margin-left: $xlarge;
+      }
+      .itemFotoDos{
+        @include indexSizes (140px, 140px);
+        margin-left: $xlarge;
+      }
+      .itemFotoTres{
+        @include indexSizes (140px, 140px);
+        margin-left: $xlarge;
+      }
+    }
+    .recoViajes{
+      .row{
+        .col-sm{
+          padding: 0;
+        }
+      }
+    }
+    .botonIndex{
+      margin-bottom: $medium;
+    }
+
+    .newsletter{
+      background-size: cover;
+      margin-bottom: 5%;
+    }
+    
+    .seccionOpiniones{
+      margin-bottom: 25%;
+    }
+    .testimonios{
+      width: auto;
+      margin-bottom: 25%;
+      .card-body{
+        p{
+          font-size: 1.3rem;
+        }
+      }
     }
     
     .card__heading {
@@ -23,19 +77,98 @@
     }
     .itemCuadrado{
       height: 326px;
-      width: 356px;
+      width: 440px;
       border: 1px solid white;
-    }  
+    }
+    .paquete{
+      h1{
+        text-align: center;
+      }
+    }
+    .servicios{
+      padding: $large;
+      margin-bottom: 0;
+      .container{
+        .row{
+          .itemServicio{
+            margin-bottom: $large;
+          }
+        }
+      }
+    }
+    
+    .seccionEquipo{
+      margin-bottom: 25%;
+    }
+    .itemsEquipo{
+      width: auto;
+      margin-bottom: 28%;
+    }
+
 }
 /* TABLET */
 @media (min-width: 481px) and (max-width: 1023px){
+    main{
+      margin-top: 18%;
+    }
     .navbar-nav{
         text-align: center;
         }
     .contenidoIndex{
         text-align: center;
         margin-top: 10px;
+    }
+    .carousel-caption{
+      h1{
+        font-size: 2.5rem;
+      }
+      p{
+        font-size: 1.2rem;
+      }
+    }
+    .fotoRedonda{
+      .itemFotoUno{
+        @include indexSizes (140px, 140px);
+        margin-left: $xlarge;
+      }
+      .itemFotoDos{
+        @include indexSizes (140px, 140px);
+        margin-left: $xlarge;
+      }
+      .itemFotoTres{
+        @include indexSizes (140px, 140px);
+        margin-left: $xlarge;
+      }
+    }
+    .recoViajes{
+      .row{
+        .col-sm{
+          padding: 0;
         }
+      }
+    }
+    .botonIndex{
+      margin-bottom: $medium;
+    }
+
+    .newsletter{
+      background-size: cover;
+      margin-bottom: 5%;
+    }
+    
+    .seccionOpiniones{
+      margin-bottom: 25%;
+    }
+    .testimonios{
+      width: auto;
+      margin-bottom: 25%;
+      .card-body{
+        p{
+          font-size: 1.3rem;
+        }
+      }
+    }
+
     .card__heading {
         color: white;
         font-size: 2.5rem;
@@ -50,9 +183,33 @@
     }
     .itemCuadrado{
       height: 326px;
-      width: 356px;
+      width: 440px;
       border: 1px solid white;
-    } 
+    }
+    .paquete{
+      h1{
+        text-align: center;
+      }
+    }
+    .servicios{
+      padding: $large;
+      margin-bottom: 0;
+      .container{
+        .row{
+          .itemServicio{
+            margin-bottom: $large;
+          }
+        }
+      }
+    }
+
+    .seccionEquipo{
+      margin-bottom: 25%;
+    }
+    .itemsEquipo{
+      width: auto;
+      margin-bottom: 28%;
+    }
 }
 
 /* CARTAS INDEX */

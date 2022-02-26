@@ -26,7 +26,7 @@
 <body>
          <!--Navbar-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png"><h1>Ocean Blue</h1></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
           </nav>
           <!--Inicio-->
     </header>
-    <main>
+    <main id="indexMain">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -64,7 +64,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/img/fotoPortada.jpg" class="d-block w-100">
+                <img src="assets/img/fotoPortada.jpg" alt="Foto de Bienvenida a Ocean Blue" class="d-block w-100">
                 <div class="carousel-caption d-md-block">
                   <h1 class="h3">Ocean Blue</h1>
                   <p class="h5">Líderes en turismo por más de 20 años. Si son vacaciones, son Ocean Blue.</p>
@@ -76,7 +76,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="assets/img/fotoplaya.jpg" class="d-block w-100">
+                <img src="assets/img/fotoplaya.jpg" alt="Oferta de viajes Nacionales" class="d-block w-100">
                 <div class="carousel-caption d-md-block">
                   <h1 class="h3">Destinos nacionales</h1>
                   <p class="h5">Recorré la Argentina como nunca antes y descubrí todo lo que nuestro hermoso país tiene para ofrecerte. </p>
@@ -86,7 +86,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="assets/img/fotonyc.jpg" class="d-block w-100">
+                <img src="assets/img/fotonyc.jpg" alt="Oferta de viajes internacionales" class="d-block w-100">
                 <div class="carousel-caption d-md-block">
                   <h1 class="h3">Destinos internacionales</h1>
                   <p class="h5">El viaje soñado que siempre quisiste hacer, ahora es posible! Descubrí las ofertas que tenemos para vos.</p>
@@ -109,29 +109,30 @@
         <div class="container contenidoIndex">
           <div class="row">
             <div class="col-lg-4 itemUno">
-              <div>
-                <img class="rounded-circle itemFotoUno" src="assets/img/excursiones.jpg" alt="">
+              <div class="fotoRedonda">
+                <img class="rounded-circle itemFotoUno" src="assets/img/excursiones.jpg" alt="Excursiones de Ocean Blue">
               </div>
               <h2>Las mejores excursiones</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est accusantium earum nulla iure saepe libero rerum, voluptas deleniti doloribus rem tenetur, ab perferendis quisquam blanditiis harum laborum, dicta totam explicabo.</p>
+              <p>Tenemos una gran variedad de excursiones en el destino que tú elijas. Nunca estarás solo, siempre tendrás la compañía de un Tour Lider que hará que disfrutes al máximo la experiencia.</p>
             </div>
             <div class="col-lg-4">
-              <div>
-                <img class="rounded-circle itemFotoDos" src="assets/img/facilidadpago.jpg" alt="">
+              <div class="fotoRedonda">
+                <img class="rounded-circle itemFotoDos" src="assets/img/facilidadpago.jpg" alt="Planes de financiación">
               </div>
               <h2>Planes de financiación</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum, accusamus cumque quia quod impedit tempore aliquid vero, tenetur doloremque laboriosam quidem fuga sint aperiam qui vitae! Id, commodi aspernatur.</p>
+              <p>En Ocean Blue viajar es muy fácil. Contamos con los mejores planes de financiación hasta en 24 cuotas sin interés. Aceptamos todo tipo de tarjetas, efectivo y transferencia bancaria.</p>
             </div>
             <div class="col-lg-4">
-              <div>
-                <img  class="rounded-circle itemFotoTres" src="assets/img/fotocontacto.jpg" alt="">
+              <div class="fotoRedonda">
+                <img  class="rounded-circle itemFotoTres" src="assets/img/fotocontacto.jpg" alt="Seguros de viajes en Ocean Blue">
               </div>
               <h2>Viajá siempre seguro</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam possimus autem quas nam nemo tempora minima ea, libero praesentium pariatur odio ipsum harum, neque quo quaerat nulla ratione sed saepe!</p>
+              <p>Viaja tranquilo. Trabajamos con "Assist Card", seguro de asistencia en viajes que te garantiza un cuidado único en los viajes. Ante cualquier eventualidad, Assist Card estará siempre para ayudarte.</p>
             </div>
           </div>
          <hr class="container">
          <!--Cartas animadas-->
+         <h1 class="textoDestacado">Destacados</h1>
          <section class="hero-section">
           <div class="card-grid">
             <a class="card" href="paquetes.html">
@@ -166,12 +167,142 @@
                 </div>
               </div>
             </a>
-          <div>
+        </div>
+        </section>
+        <hr class="container">
+        <section class="promociones">
+          <h1 class="textoDestacado">Nuestras recomendaciones</h1>
+          <div class="container recoViajes">
+            <div class="row">
+              <div class="col-sm">
+                <a href="paquetes.html"><img class="fotoReco" src="assets/img/cancun.jpg" alt="Foto de Cancún"></a>
+              </div>
+              <div class="col-sm datosPromo">
+                <a href="paquetes.html"><h2>Cancún, Mexico</h2></a>
+                <div class="reviews">
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-star-half"></i>
+                  </span>
+                  <a href="index.html">Reseñas de 10 personas</a>
+                  <p class="descripcion">
+                    El atractivo principal en Cancún son sus playas majestuosas. La región está conformada de 17 kilómetros de arena blanca y brillante agua turquesa. Su litoral está compuesto por una infinita y espectacular vida marina: un gran tesoro para los adeptos al snorkel y el buceo.
+                  </p>
+              </div>
+              <div class="container-fluid botonIndex">
+                <button type="button" class="btn btn-outline-dark">Adquirir el paquete</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="promociones">
+          <div class="container recoViajes">
+            <div class="row">
+              <div class="col-sm">
+                <a href="paquetes.html"><img class="fotoReco" src="assets/img/maldivas.jpg" alt="Foto de las Islas Maldivas"></a>
+              </div>
+              <div class="col-sm datosPromo">
+                <a href="paquetes.html"><h2>Islas Maldivas</h2></a>
+                <div class="reviews">
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                  <a href="index.html">Reseñas de 8 personas</a>
+                  <p class="descripcion">
+                    Las Islas Maldivas están situadas en el océano Índico, al sur de la India. Es un conjunto de 1.190 islas coralinas distribuidas en 26 grandes atolones, estructuras de coral separadas por lagunas que se extienden creando un paisaje que enamora por su encanto natural.
+                  </p>
+              </div>
+              <div class="container-fluid botonIndex">
+                <button type="button" class="btn btn-outline-dark">Adquirir el paquete</button>
+              </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
+      <section class="newsletter">
+        <div class="newsEncabezado container">
+          <h1>Suscribete para obtener un 10% de descuento</h1>
+        </div>
+        <div class="newsP">
+          <p>¿Quieres obtener un descuento para tu próximo viaje? Dejanos tu correo electrónico y suscribete para obtener todas nuestras novedades con un 10% de descuento en todos nuestros paquetes.</p>
+        </div>
+        <div class="formularioSuscripcion">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo">
+              <button type="button" class="btn btn-outline-dark">Suscribirse</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section>
+        <h1 class="seccionOpiniones">Opiniones de nuestros clientes:</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="testimonios">
+                <div class="imagenTestimonio">
+                  <img class="avatar rounded-circle" src="assets/img/testimonioUno.jpg" alt="Testimonios">
+                </div>
+                <div class="card-body">
+                  <h4>Leonardo López</h4>
+                  <p class="card-text">Solo quería dar las gracias por ayudarme a organizar mis vacaciones soñadas con mi familia. Tuvimos una maravillosa estadía en Cancún! Tanto el hotel como el staff se comportaron perfecto con nosotros, sin dudas volveremos por más.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="testimonios">
+                <div class="imagenTestimonio">
+                  <img class="avatar rounded-circle" src="assets/img/testimonioDos.jpg" alt="Testimonios">
+                </div>
+                <div class="card-body">
+                  <h4>Julieta Rearte</h4>
+                  <p class="card-text">Quería darles las gracias por ayudarme a planear mi viaje a Francia con mi hermana. Fue sorprendente y superó totalmente mis expectativas! La pasamos genial y nos sentimos totalmente satisfechas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="testimonios">
+                <div class="imagenTestimonio">
+                  <img class="avatar rounded-circle" src="assets/img/testimonioTres.jpg" alt="Testimonios">
+                </div>
+                <div class="card-body">
+                  <h4>Esteban Gómez</h4>
+                  <p class="card-text">Tuve una estadía maravillosa en Bariloche, la experiencia y las excursiones fueron inolvidables. Todo el staff fue muy atento conmigo, me brindaron los mejores servicios y estaré agradecido siempre.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
         <!-- FOOTER -->
         <footer>
-          <div class="container-fluid">
+          <div class="container">
             <div class="row">
               <div class="col-lg-4">
                 <div id="footerUno">

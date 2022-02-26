@@ -3,7 +3,44 @@
     margin: $large $large;
 }
 .itemCuadrado{
-    height: 376px;
-    width: 450px;
+    height: 600px;
+    width: 620px;
     border: 1px solid white;
+}
+
+.lineaDivisora{
+    font-size: 0;
+    line-height: 0;
+    height: 1px;
+    width: 100%;
+    background: #c2bcbc;
+}
+.size-30{
+    margin: 30px 0;
+}
+
+.paquete{
+    margin-top: $large;
+    margin-bottom: $large;
+    p{
+        color: #868686;
+    }
+    div{
+        p{
+            color: black;
+            font-size: 1.3rem;
+            span{
+                color: #868686;
+                .fa-brands{
+                    font-size:25px;
+                    margin-left: $small;
+                    -webkit-text-stroke: 1px black;
+                }
+            }
+        }
+    }
+}
+.shareOption{
+    font-size: 25px;
+    font-weight: bolder;
 }

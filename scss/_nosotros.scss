@@ -2,15 +2,15 @@
 #nosotros{
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: $large;
+    margin-bottom: $large;
     font-weight: bold;
     display: flex;
     align-items: center;
     font-family: 'Nunito';
     article{
         .encabezadoNosotros{
-            font-size: 9vh;
+            @extend .textoDestacado;
             margin-bottom: 25px;
             font-weight: bolder;
         }
@@ -19,3 +19,85 @@
         }
     }
 }
+/* NOSOTROS - SERVICIOS */
+.servicios{
+    margin-bottom: $xlarge;
+    .container{
+        .row{
+            .itemServicio{
+                border: 1px solid #c8c7c7;
+                margin-right: $medium;
+                background: #f8f8f8;
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+                &:hover{
+                    -webkit-transform: translateY(-20px);
+                    -ms-transform: translateY(-20px);
+                    transform: translateY(-20px);
+                    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.32);
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+                h2{
+                    text-align: center;
+                    padding-top: $small;
+                }
+                i{
+                    color: $colorCremita;
+                }
+                }
+            }
+        }
+}
+/* NOSOTROS - EQUIPO */
+.seccionEquipo{
+    @extend .textoDestacado;
+    margin-bottom: 8%;
+  }
+  
+  .itemsEquipo{
+    width: 18rem;
+    height: 290px;
+    background-image: url(../assets/img/fondoItemsEquipo.jpg);
+    background-position: center;
+    margin-bottom: $paddingItems;
+    border: 1px solid $colorCremita;
+    .card-body{
+      padding-top: $medium;
+      h4{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 2rem;
+      }
+      p{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+    }
+    .imgEquipo{
+      display: flex;
+      justify-content: center;
+      .avatar{
+        border: 1px solid $colorCremita;
+        margin-top: -6rem;
+        max-width: 18rem;
+        height: 244px;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        &:hover{
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+        }
+      }
+    }
+  }
