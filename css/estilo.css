@@ -130,7 +130,7 @@ i {
 /* INDEX */
 /* CAROUSEL */
 .carousel-item img {
-  height: 90vh;
+  height: 85vh;
   width: 100vh;
 }
 
@@ -340,7 +340,7 @@ i {
   background-repeat: no-repeat;
   background-size: 100%;
   color: white;
-  height: 400px;
+  height: auto;
   margin-bottom: 8px;
 }
 .newsletter div {
@@ -353,12 +353,16 @@ i {
 .newsletter .newsEncabezado h1 {
   font-weight: bold;
   font-size: 3rem;
+  text-align: center;
 }
 .newsletter .newsP {
   text-align: center;
   padding-left: 10%;
   padding-right: 10%;
   font-size: 1.4rem;
+}
+.newsletter .formularioSuscripcion {
+  padding-bottom: 10%;
 }
 .newsletter .formularioSuscripcion form .form-group input {
   background: rgba(255, 255, 255, 0.3);
@@ -390,7 +394,7 @@ i {
 }
 .testimonios .card-body {
   padding-top: 0;
-  height: 220px;
+  height: auto;
 }
 .testimonios .card-body h4 {
   text-align: center;
@@ -625,24 +629,28 @@ i {
 .formularioContacto .contact-form label {
   font-weight: 600;
 }
-.formularioContacto .contact-form button {
+.formularioContacto .contact-form .botoncito {
+  display: flex;
+  justify-content: center;
+}
+.formularioContacto .contact-form .botoncito button {
   background: #25274d;
   color: #fff;
   font-weight: 600;
   width: 25%;
   margin-top: 10px;
 }
-.formularioContacto .contact-form button:focus {
+.formularioContacto .contact-form .botoncito button:focus {
   box-shadow: none;
 }
-.formularioContacto .contact-form button:hover {
+.formularioContacto .contact-form .botoncito button:hover {
   color: burlywood;
 }
 
 /* MEDIA QUERY - SMARTPHONE*/
 @media (max-width: 480px) {
   main {
-    margin-top: 18%;
+    margin-top: 25%;
   }
 
   .navbar-nav {
@@ -652,6 +660,11 @@ i {
   .contenidoIndex {
     text-align: center;
     margin-top: 10px;
+  }
+
+  .carousel-item img {
+    height: 65vh;
+    width: 100vh;
   }
 
   .carousel-caption h1 {
@@ -718,7 +731,7 @@ i {
 
   .itemCuadrado {
     height: 326px;
-    width: 440px;
+    width: 370px;
     border: 1px solid white;
   }
 
@@ -746,7 +759,7 @@ i {
 /* TABLET */
 @media (min-width: 481px) and (max-width: 1023px) {
   main {
-    margin-top: 18%;
+    margin-top: 15%;
   }
 
   .navbar-nav {
@@ -756,6 +769,11 @@ i {
   .contenidoIndex {
     text-align: center;
     margin-top: 10px;
+  }
+
+  .carousel-item img {
+    height: 60vh;
+    width: 100vh;
   }
 
   .carousel-caption h1 {
@@ -795,7 +813,7 @@ i {
   }
 
   .seccionOpiniones {
-    margin-bottom: 25%;
+    margin-bottom: 15%;
   }
 
   .testimonios {
@@ -804,6 +822,7 @@ i {
   }
   .testimonios .card-body p {
     font-size: 1.3rem;
+    height: auto;
   }
 
   .card__heading {
@@ -822,8 +841,9 @@ i {
 
   .itemCuadrado {
     height: 326px;
-    width: 440px;
+    width: 400px;
     border: 1px solid white;
+    margin-top: 35%;
   }
 
   .paquete h1 {

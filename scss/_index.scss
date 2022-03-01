@@ -1,7 +1,7 @@
 /* INDEX */
 /* CAROUSEL */
 .carousel-item img{
-    height:90vh;
+    height:85vh;
     width: 100vh;
     }
 .carousel-caption{
@@ -216,7 +216,7 @@ $cartas:(
   background-repeat: no-repeat;
   background-size: 100%;
   color: white;
-  height: 400px;
+  height: auto;
   margin-bottom: $small;
   div{
     display: flex;
@@ -227,6 +227,7 @@ $cartas:(
     h1{
       font-weight: bold;
       font-size: 3rem;
+      text-align: center;
     }
   }
   .newsP{
@@ -236,6 +237,7 @@ $cartas:(
     font-size: 1.4rem;
   }
   .formularioSuscripcion{
+    padding-bottom: 10%;
     form{
       .form-group{
         input{
@@ -272,7 +274,7 @@ $cartas:(
   border: 1px solid $colorCremita;
   .card-body{
     padding-top: 0;
-    height: 220px;
+    height: auto;
     h4{
       text-align: center;
       font-weight: bold;
