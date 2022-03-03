@@ -571,6 +571,13 @@ i {
   margin-bottom: 16px;
 }
 
+.accordion-body p a {
+  color: blue;
+}
+.accordion-body p a:hover {
+  color: black;
+}
+
 .accordion-button {
   color: #060713;
   font-size: 1.5rem;
@@ -579,7 +586,7 @@ i {
   color: gray;
 }
 .accordion-button:not(.collapsed) {
-  color: burlywood;
+  color: black;
 }
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -703,13 +710,9 @@ i {
     margin-bottom: 5%;
   }
 
-  .seccionOpiniones {
-    margin-bottom: 25%;
-  }
-
   .testimonios {
     width: auto;
-    margin-bottom: 25%;
+    margin-top: 25%;
   }
   .testimonios .card-body p {
     font-size: 1.3rem;
@@ -748,12 +751,12 @@ i {
   }
 
   .seccionEquipo {
-    margin-bottom: 25%;
+    margin-bottom: 15%;
   }
 
   .itemsEquipo {
     width: auto;
-    margin-bottom: 28%;
+    margin-top: 25%;
   }
 }
 /* TABLET */
@@ -812,13 +815,9 @@ i {
     margin-bottom: 5%;
   }
 
-  .seccionOpiniones {
-    margin-bottom: 15%;
-  }
-
   .testimonios {
     width: auto;
-    margin-bottom: 25%;
+    margin-top: 20%;
   }
   .testimonios .card-body p {
     font-size: 1.3rem;
@@ -859,12 +858,12 @@ i {
   }
 
   .seccionEquipo {
-    margin-bottom: 25%;
+    margin-bottom: 15%;
   }
 
   .itemsEquipo {
     width: auto;
-    margin-bottom: 28%;
+    margin-top: 25%;
   }
 }
 /* CARTAS INDEX */
